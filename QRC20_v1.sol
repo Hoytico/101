@@ -1,17 +1,8 @@
 pragma solidity ^0.4.19;
+//this is the compiler version//
 
-/*
-This is MAUCOIN the Official Cryptocurrency of MU Crypto.
-Made during a very boring evening by @Hoytico
-
-(\(\
-( – -)
-((‘) (’)
-
-Join us on Telegram https://t.me/joinchat/Hg3PmBMGZ7Wrt6jJD77D5Q
-*/
-
-contract MAUToken {
+contract BIGToken {
+//this is the token contract name, change to liking//
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
 
@@ -19,10 +10,14 @@ contract MAUToken {
 
     event Burn(address indexed from, uint256 value);
     
-    string public constant symbol = "MAU";
-    string public constant name = "Maucoin";
-    uint8 public constant decimals = 18;
-    uint256 _totalSupply = 88888888000000000000000000;
+    string public constant symbol = "BIG";
+    //this is the token symbol, change to liking//
+    string public constant name = "BigCoin";
+    //this is the token name, change to liking//
+    uint8 public constant decimals = 0;
+    //this is the number of decimal place for the token, change to liking//
+    uint256 _totalSupply = 1000000;
+    //this is the total supply of token to be created, change to liking//
     uint256 _totalBurned = 0;
      
     address public owner;
@@ -40,7 +35,9 @@ contract MAUToken {
          _;
      }
   
-     function MAUToken() 
+     function BIGToken()
+     //this is the token contract name, change to liking//
+
      {
         owner = msg.sender;
         balances[owner] = _totalSupply;
